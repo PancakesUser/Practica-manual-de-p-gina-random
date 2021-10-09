@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Whitney';
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.izquierda{
+    width: 50%;
+    height: 100vh;
+    background:#3c3c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.izquierda__textos{
+    margin-top: 25%;
+}
+
+.izquierda__textos b{
+    font-size: 20px;
+}
+
+.izquierda__textos h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.izquierda__textos p{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.izquierda__link a{
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.derecha{
+    width: 50%;
+    height: 100vh;
+    background: url('https://www.xtrafondos.com/wallpapers/vertical/audifonos-en-rosa-y-azul-pastel-3844.jpg') no-repeat;
+    background-size: cover;
+}
+
+#pantalla-dividida{
+    display: flex;
+}
+
+
+/* Principal */
+
+body {
+    overscroll-behavior: smooth;
+    background-color: white;
+}
+
+#header__principal{
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+    }
+    
+.header__contenidos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.header__contenidos .img{
+    color: white;
+    margin-top: 20px;
+}
+
+.header__contenidos ul li{
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+.bg__color{
+    width: 100%;
+    height: 580px;
+    background: no-repeat url('https://c.tenor.com/VR7e9ogArgYAAAAd/lofi-lofigirl.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.arrow{
+    border: solid 2px black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 15px;
+}
+
+.arrow:hover{
+    border: solid 2px cyan;
+    border-width: 0 3px 3px 0;
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.bg__textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bg__textos h1{
+    color: white;
+    margin: 20%;
+    font-size: 50px;
+}
+
+/* .bg__textos a{
+    color: black;
+    border: white 2px solid;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: orange;
+    text-decoration: none;
+} */
+
+
+/* About us */
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 450px;
+}
+
+.about-us__textos h1{
+        font-size: 40px;
+}
+
+.about-us__textos p{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Our Services */
+.our-services{
+    margin-top: 500px;
+    width: 100%;
+}
+
+.our-services__title {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 100px;
+}
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+.services h1{
+    width: 30%
+}
+
+.services img{
+    width: 350px;
+}
+
+/* Feedback */
+.feedback{
+    margin-top: 10px;
+}
+
+
+.feedback__titulo{
+    text-align: center;
+    font-size: 24px;
+}
+
+.feedback__cards{
+        display: flex;
+        padding: 40px;
+        gap: 10px;
+}
+
+.feedback__card{
+        max-width: fit-content;
+        background-color: #3c3c;
+        color: white;
+}
+
+.feedback__card h1{
+    color: black;
+    text-align: center;
+}
+
+.feedback__card h2{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.feedback__card img{
+    display: inline-block;
+    width: 20%;
+    border-radius: 100%;
+    border: gray 2px solid;
+    margin: 0px 40%;
+}
+
+
+/* Queries */
+
+/* Principal */
+@media screen and (max-width: 640px) {
+
+    .services{
+        flex-direction: column;
+    }
+
+    .services h1{
+        width: 100%;
+    }
+
+
+    .feedback__cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Index */
+
+@media screen and (max-width: 640px) {
+        .derecha{
+            width: 50%;
+            height: 100vh;
+            background: url('https://www.xtrafondos.com/wallpapers/vertical/audifonos-en-rosa-y-azul-pastel-3844.jpg') no-repeat;
+            background-size:cover;
+            background-position: center;
+        }
+
+        .izquierda{
+            width: 50%;
+            height: 100vh;
+            background:#3c3c;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+
+        .izquierda__textos{
+            margin-top: 25%;
+        }
+        
+        .izquierda__textos b{
+            font-size: 20px;
+        }
+        
+        .izquierda__textos h1{
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .izquierda__textos p{
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .izquierda__link a{
+            border: 3px solid black;
+            border-radius: 8px;
+            padding: 10px 15px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+
+        /* BG */
+        .bg__textos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .bg__textos h1{
+            color: white;
+            margin: 50%;
+            width: 100%;
+            font-size: 50px;
+        }
+}
+
